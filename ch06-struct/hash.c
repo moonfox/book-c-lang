@@ -109,7 +109,8 @@ NotePtr install(char *name, char *defn)
   return np;
 }
 
-void print_list(NotePtr np){
+void print_list(NotePtr np)
+{
   for (; np != NULL; np = np->next)
   {
     printf("%s:%s\n", np->name, np->defn);
